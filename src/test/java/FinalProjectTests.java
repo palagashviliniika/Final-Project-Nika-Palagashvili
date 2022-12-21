@@ -65,10 +65,10 @@ public class FinalProjectTests {
     @Test(priority = 3)
     public void fourthTask(){
         dasveneba.OpenDasveneba();
-        $("#minprice").scrollIntoView(true).click();
-
-        dasveneba.GetMinPriceField().click();
-//        dasveneba.FillPriceFilter("170", "180");
+        dasveneba.FillPriceFilter("170", "180");
+        dasveneba.Search();
         sleep(5000);
+        System.out.println($$(".discounted-prices "));
+//        sleep(5000);
     }
 }
